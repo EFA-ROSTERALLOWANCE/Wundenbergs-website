@@ -14,8 +14,11 @@ open `index.html` or serve the folder (`python3 -m http.server`).
 | Gear List | `gear.html` (searchable) |
 | Contact | `contact.html` (enquiry form) |
 
-All the copy, photos, gear and contact details come from the current site. Rehearsal room rates and peak and
-off-peak times come from the booking system's rules block.
+All the copy, photos, gear and contact details come from the current site. Rehearsal room details, prices and
+peak and off-peak times come from [adelaiderehearsalrooms.com](https://adelaiderehearsalrooms.com/).
+
+The rehearsal rooms' own site, Adelaide Rehearsal Rooms, is in [`adelaide-rehearsal-rooms/`](adelaide-rehearsal-rooms/).
+It uses the same design and has its own README.
 
 ## How it fits with the booking system
 
@@ -40,10 +43,9 @@ the booking page looks like one product.
 - **Enquiry form**: with `FORM_ENDPOINT` empty, Send opens the visitor's email app with the enquiry filled
   in, addressed to `info@wundenbergs.com`. To send from the page itself, set `FORM_ENDPOINT` to a form
   handler (a WordPress form plugin endpoint, Formspree, etc.) that accepts a POST of the form fields.
-- **Rehearsal rates table** (`rehearsal-rooms.html`) is static. If prices change in wp-admin → Bookings →
-  Rooms & Prices, update the table to match. The booking page always shows the live price.
-- **Windsor Gardens address**: Rooms 7–8 are listed there, but the current site gives no street address
-  for them, so none is shown.
+- **Rehearsal rates table** (`rehearsal-rooms.html`) is static and follows adelaiderehearsalrooms.com. The
+  booking system disagrees with it in places (Room 9, Room 6's price, Sunday peak); see
+  `adelaide-rehearsal-rooms/README.md`.
 - **Store**: the old Ecwid store page is in maintenance mode, so it isn't in the new navigation.
 - **Old URLs**: if this replaces the WordPress pages, redirect `/studio1/` → `studio-1.html`,
   `/studio2/` → `studio-2.html`, `/gearlist/` → `gear.html`, `/contactus/` → `contact.html`,
