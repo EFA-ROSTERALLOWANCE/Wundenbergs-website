@@ -26,19 +26,21 @@ where they all go. It defaults to `/book/`, the page made with the
 template. Until that is live, set it to the current booking page,
 `https://adelaide-rehearsal-rooms.jammed.app/bookings#/`.
 
-## Before going live: things that don't match the booking system
+## Before going live: still to confirm with the studio
 
-This site follows what adelaiderehearsalrooms.com says today. The booking system's rules block differs in
-places, so check these and line the booking system up with whichever is right:
+Settled on 10 Oct 2026 and now matching the booking system (1.9.1): 4-hour minimum with half-hour
+extensions, the nine gear hire extras and prices, full payment online, door codes working 30 minutes either
+side, the booking system's refund and move rules, and the contact details.
+
+Still open. The site shows what adelaiderehearsalrooms.com says today; the booking system differs:
 
 - **Room 9** is missing from the booking system, which has 8 rooms.
 - **Room 6** is $55 per 4 hours on the site ($13.75/hr), but the booking system charges $16.25/hr.
-- **Sunday** is off-peak from 5pm on the site. The booking system has Sunday peak all day.
-- **Minimum session** is 4 hours on the site, but 2 hours in the booking system (marked as a placeholder there).
-- **Opening hours** are 24/7 on the site, but 8am–midnight in the booking system (also a placeholder).
-- **Snare and cymbal hire** is an add-on on the site. The booking system has a placeholder "Backline hire" extra.
-- **Cancellations**: the site says no cancellations or refunds within 48 hours of a booking. The booking
-  system allows a full refund within 24 hours of making the booking, and a free move up to 48 hours before.
+- **Sunday** is off-peak from 5pm on the site. The booking system has Sunday peak all day. The old Booking
+  page also says Mon–Thu peak ends at 11pm.
+- **Opening hours** are 24/7 on the site, but 8am–midnight in the booking system (a placeholder). Sessions
+  running past midnight need checking in the booking system.
+- **Gear hire** prices are shown here as fixed amounts per booking; confirm none of them are per hour.
 
 ## Editing
 
